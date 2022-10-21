@@ -5,7 +5,8 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="doctor"  class="com.sg.Doctor">
-        <property name="qualification" value="MBBS"></property>
+        <constructor-arg value="mbbs"></constructor-arg>
+<!--        <property name="qualification" value="MBBS"></property>-->
         <property name="nurse" ref="nurse"></property>
     </bean>
     <bean id="nurse" class="com.sg.Nurse"></bean>
