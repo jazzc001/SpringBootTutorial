@@ -8,8 +8,5 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.sg")
 public class BeanConfig {
 
-    @Bean
-    public Doctor doctor() {
-        return new Doctor();
-    }
+
 }
